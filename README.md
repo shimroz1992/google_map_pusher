@@ -1,24 +1,38 @@
-# README
+Build a realtime location sharing app with Ruby on Rails and Pusher Channels
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Getting Started
+------
 
-Things you may want to cover:
+#### Clone The Repository
+`$ git clone https://github.com/shimroz1992/google_map_pusher.git`
 
-* Ruby version
 
-* System dependencies
+#### Change directory
+`$ cd google_map_pusher`
 
-* Configuration
+#### Install dependencies
+`$ bundle install`
 
-* Database creation
+#### Setup up database
+`$ rails db:setup`
+`$ rails db:migrate`
 
-* Database initialization
+#### Setup up Figaro and Env variables
+- Run `$ figaro install` to automatically generate `application.yml` file.
+- Open `config/application.yml` and replace the content (if any) with the following:
+```
+PUSHER_APP_ID: 'your Pusher app ID'
+PUSHER_KEY: 'your pusher kep'
+PUSHER_SECRET: 'your pusher secret'
+PUSHER_CLUSTER: 'your pusher cluster'
+```
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+Prerequisites
+------
+A basic knowledge of Ruby and CoffeeScript
 
-* Deployment instructions
 
-* ...
+Built With
+------
+- [Pusher](https://pusher.com) - A Ruby gem to interact with the Pusher REST API
