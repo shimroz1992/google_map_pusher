@@ -36,3 +36,11 @@ A basic knowledge of Ruby and CoffeeScript
 Built With
 ------
 - [Pusher](https://pusher.com) - A Ruby gem to interact with the Pusher REST API
+
+
+
+Once our users submit a name, we request their location,
+save it to the database and then render a map showing that location.
+
+If the user’s location is saved successfully, we render the link for sharing their location on the header,
+render the map on the page
